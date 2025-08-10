@@ -1,3 +1,10 @@
 :root{
     --primaria: #121212;
+    --branco: #FFF;
+}
+
+
+html, body{
+    background-color: var(--primaria);
+    color: var(--branco);
 }
