@@ -6,8 +6,6 @@
 
 html, body{
     scroll-behavior: smooth;
-    background-color: var(--primaria);
-    color: var(--branco);
 }
 
 .banner{
