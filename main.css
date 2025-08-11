@@ -9,3 +9,32 @@ html, body{
     background-color: var(--primaria);
     color: var(--branco);
 }
+
+
+.btn-icon-left{
+    padding-left: 70px;
+}
+
+.btn-icon-left span.icon-left{
+    display: inline-block;
+    color: var(--branco);
+    background-color: var(--primaria);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-sm{
+    padding: 9px 15px!important;
+    border-radius: 15px!important;
+    font-size: 18px!important;
+}
+
+.btn.social{
+    width: 50px;
+}
