@@ -1,17 +1,19 @@
 :root{
-    --primaria: #121212;
+    --black: #121212;
     --branco: #FFF;
 }
 
 
 html, body{
     scroll-behavior: smooth;
-    background-color: var(--primaria);
+    background-color: var(--black);
     color: var(--branco);
 }
 
 
 .icon{
-    color: var(--branco);
+    color: var(--black);
     width: 40px;
+    border: var(--branco);
+    border-radius: 25px;
 }
