@@ -9,3 +9,7 @@ html, body{
     background-color: var(--primaria);
     color: var(--branco);
 }
+
+.logo{
+    width: 50%;
+}
