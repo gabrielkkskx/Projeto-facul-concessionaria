@@ -9,3 +9,9 @@ html, body{
     background-color: var(--primaria);
     color: var(--branco);
 }
+
+
+i{
+    color: var(--branco);
+    width: 40px;
+}
