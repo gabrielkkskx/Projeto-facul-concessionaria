@@ -11,7 +11,7 @@ html, body{
 }
 
 
-i{
+.icon{
     color: var(--branco);
     width: 40px;
 }
