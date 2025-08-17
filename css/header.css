@@ -6,4 +6,6 @@
 .navbar-itens{
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    font-weight: 400;
 }
