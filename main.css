@@ -16,6 +16,7 @@ html, body{
     font-family: "Poppins", sans-serif;
 }
 
-.textos{
+.textos-padrao{
+    font-weight: 400;
     color: var(--branco);
 }
