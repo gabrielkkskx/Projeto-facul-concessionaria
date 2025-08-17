@@ -1,5 +1,9 @@
 .img-logo{
-    width: 50px;
-    position: absolute;
+    width: 170px;
     padding: 10px;
+}
+
+.navbar-itens{
+    display: flex;
+    flex-direction: row;
 }
