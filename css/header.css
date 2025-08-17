@@ -1,4 +1,5 @@
-.navbar-itens{
-    display: flex;
-    flex-direction: row;
+.img-logo{
+    width: 50px;
+    position: absolute;
+    padding: 10px;
 }
