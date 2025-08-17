@@ -15,3 +15,7 @@ html, body{
     color: var(--branco);
     font-family: "Poppins", sans-serif;
 }
+
+.textos{
+    color: var(--branco);
+}
