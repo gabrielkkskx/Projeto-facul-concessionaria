@@ -13,4 +13,5 @@ html, body{
     scroll-behavior: smooth;
     background-color: var(--black);
     color: var(--branco);
+    font-family: "Poppins", sans-serif;
 }
