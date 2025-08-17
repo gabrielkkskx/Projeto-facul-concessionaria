@@ -6,6 +6,7 @@
 :root{
     --black: #121212;
     --branco: #FFF;
+    --cinza: #b4b4b4;
 }
 
 
@@ -16,7 +17,13 @@ html, body{
     font-family: "Poppins", sans-serif;
 }
 
-.textos-padrao{
+.texto-padrao{
     font-weight: 400;
     color: var(--branco);
+}
+
+.texto-fraco{
+    font-weight: 300;
+    color: var(--cinza);
+    opacity: 0.8;
 }
