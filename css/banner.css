@@ -62,6 +62,7 @@
 
 .btn-socialm:hover{
     background-color: var(--hover-botao);
+    color: var(--branco);
 }
 
 .botao-branco{
@@ -77,10 +78,6 @@
 .botao-branco.active,
 .botao-branco:hover{
     background-color: var(--hover-botao);
-}
-
-.botao-icon{
-    padding-right: 75px;
 }
 
 .botao-icon .icon{
