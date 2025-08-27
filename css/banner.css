@@ -53,11 +53,15 @@
 }
 
 .btn-socialm{
-    background-color: var(--black);
+    background-color: var(--primaria);
     color: var(--branco);
     padding: 9px 15px!important;
     border-radius: 15px!important;
     font-size: 18px!important;
+}
+
+.btn-socialm:hover{
+    background-color: var(--hover-botao);
 }
 
 .botao-branco{
@@ -82,7 +86,7 @@
 .botao-icon .icon{
     display: inline-block;
     color: var(--preto);
-    background-color: var(--primaria);
+    background-color: var(--blk-absoluto);
     width: 45px;
     height: 45px;
     position: absolute;
