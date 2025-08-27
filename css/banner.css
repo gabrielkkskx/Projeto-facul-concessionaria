@@ -55,7 +55,7 @@
     transition: background-color .3s;
 }
 
-
+.botao
 .botao-branco.active,
 .botao-branco:hover{
     background-color: var(--primaria);
