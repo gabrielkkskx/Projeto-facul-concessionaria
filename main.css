@@ -6,7 +6,10 @@
     --black: #121212;
     --branco: #FFF;
     --cinza: #b4b4b4;
-
+    --blk-absoluto: #000;
+    --primaria: #0d0025;
+    --botao-destaque: #1a0048;
+    --hover-botao: #1a0048c9;
 }
 
 .img-logo{
