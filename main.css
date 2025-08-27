@@ -12,6 +12,10 @@
     --hover-botao: #1a0048c9;
 }
 
+a{
+    text-decoration: none;
+}
+
 .img-logo{
     width: 170px;
     padding: 10px;

@@ -58,7 +58,9 @@
 
 .botao-branco.active,
 .botao-branco:hover{
-    background-color: var(--hover-botao);
+    background-color: var(--primaria);
+    display: flex;
+    gap: 10px;
 }
 
 .botao-icon{
