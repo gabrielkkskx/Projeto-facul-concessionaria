@@ -23,6 +23,11 @@
     padding-left: 70px;
 }
 
+.botao{
+    display: flex;
+    gap: 10px;
+}
+
 .botao-icon-left span.icon-left{
     display: inline-block;
     color: var(--branco);
@@ -55,12 +60,9 @@
     transition: background-color .3s;
 }
 
-.botao
 .botao-branco.active,
 .botao-branco:hover{
     background-color: var(--primaria);
-    display: flex;
-    gap: 10px;
 }
 
 .botao-icon{
