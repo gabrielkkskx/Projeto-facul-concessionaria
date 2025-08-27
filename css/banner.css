@@ -1,3 +1,13 @@
+.nav-link{
+    color: var(--branco);
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.nav-link:hover{
+    color: var(--primaria);
+}
+
 .title-banner{
     font-family: "Smooch Sans", sans-serif;
     font-weight: 100;
@@ -62,7 +72,7 @@
 
 .botao-branco.active,
 .botao-branco:hover{
-    background-color: var(--primaria);
+    background-color: var(--hover-botao);
 }
 
 .botao-icon{
