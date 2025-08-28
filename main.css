@@ -2,14 +2,18 @@
 @import url(./css/modelos.css);
 @import url(./css/sobre.css);
 
-:root{
-    --black: #121212;
-    --branco: #FFF;
-    --cinza: #b4b4b4;
-    --blk-absoluto: #000;
-    --primaria: #0d0025;
-    --botao-destaque: #1a0048;
-    --hover-botao: #1a0048c9;
+:root {
+  --black: #121212;         /* Preto fosco - fundo geral */
+  --branco: #F8F9FA;        /* Branco gelo - textos claros */
+  --cinza: #6C757D;         /* Cinza médio - textos secundários */
+  --blk-absoluto: #000;     /* Preto absoluto - contraste forte */
+
+  --primaria: #E63946;      /* Vermelho vibrante - destaque principal */
+  --botao-destaque: #FF2E63;/* Rosa/vermelho neon - botões chamativos */
+  --hover-botao: #C9184A;   /* Tom mais escuro no hover */
+
+  --secundaria: #ADB5BD;    /* Cinza metálico - bordas/divisores */
+  --detalhe: #1D3557;       /* Azul petróleo - detalhes de confiança */
 }
 
 a{
@@ -23,8 +27,8 @@ a{
 
 html, body{
     scroll-behavior: smooth;
-    background-color: var(--branco);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--branco);
     font-family: "Poppins", sans-serif;
 }
 
