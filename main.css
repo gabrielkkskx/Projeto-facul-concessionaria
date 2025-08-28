@@ -21,6 +21,17 @@
     background: linear-gradient(278deg, #1A1523, #2D1F46);
 }
 
+.detalhe{
+    color: var(--detalhe) !important;
+}
+
+.hint-title{
+    color: var(--primaria) !important;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
 a{
     text-decoration: none;
 }
