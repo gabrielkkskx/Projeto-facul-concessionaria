@@ -3,18 +3,19 @@
 @import url(./css/sobre.css);
 
 :root {
-  --black: #0D1B2A;        /* Azul marinho quase preto - fundo principal */
-  --branco: #FFFFFF;       /* Branco puro - textos principais */
-  --cinza: #E0E1DD;        /* Cinza claro - fundos suaves e textos secundários */
-  --blk-absoluto: #000;    /* Preto absoluto - contrastes fortes */
+  --black: #1A1523;         /* Roxo quase preto - fundo principal */
+  --branco: #FFFFFF;        /* Branco puro - textos principais */
+  --cinza: #D1D1E0;         /* Cinza lilás claro - textos secundários / fundos suaves */
+  --blk-absoluto: #000;     /* Preto absoluto - contrastes fortes */
 
-  --primaria: #F4A300;     /* Dourado metálico - destaque elegante */
-  --botao-destaque: #D88C00; /* Dourado mais escuro - botões principais */
-  --hover-botao: #B37400;  /* Hover do botão - tom ainda mais fechado */
+  --primaria: #6C4AB6;      /* Roxo médio - cor principal de identidade */
+  --botao-destaque: #553285;/* Roxo escuro - botões principais */
+  --hover-botao: #442466;   /* Roxo ainda mais fechado no hover */
 
-  --secundaria: #1B263B;   /* Azul chumbo - apoio em cards, bordas, menus */
-  --detalhe: #415A77;      /* Azul médio - detalhes e ícones */
+  --secundaria: #2D1F46;    /* Roxo profundo - menus, cards, bordas */
+  --detalhe: #A992E2;       /* Roxo claro/detalhe - ícones, links, pequenos destaques */
 }
+
 
 
 a{
