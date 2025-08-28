@@ -32,6 +32,11 @@
     letter-spacing: 5px;
 }
 
+.text{
+    text-align: justify;
+    font-size: 17px;
+}
+
 a{
     text-decoration: none;
 }
