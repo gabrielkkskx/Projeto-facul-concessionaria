@@ -17,6 +17,9 @@
 }
 
 
+.navbar-bg{
+    background: linear-gradient(90deg, #1A1523, #2D1F46);
+}
 
 a{
     text-decoration: none;
