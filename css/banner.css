@@ -71,7 +71,7 @@
 .botao-branco.active,
 .botao-branco:hover{
     background-color: var(--hover-botao);
-    color: var(--branco);
+    color: var(--branco) !important;
 }
 
 .botao-icon .icon{
