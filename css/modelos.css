@@ -1,32 +1,23 @@
-.carros {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 por linha */
-  gap: 20px;
-  padding: 20px;
-  max-width: 250px;
-  margin: auto;
-}
-
-.card {
+.carros .card {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
   cursor: pointer;
 }
 
-.card img {
+.carros .card img {
   width: 100%;
-  height: 200px; /* ajusta a altura */
+  height: 200px;
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
 }
 
-.card:hover img {
-  transform: scale(1.1); /* zoomzinho na foto */
+.carros .card:hover img {
+  transform: scale(1.1);
 }
 
-.overlay {
+.carros .overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
@@ -39,16 +30,16 @@
   transition: opacity 0.3s ease;
 }
 
-.card:hover .overlay {
+.carros .card:hover .overlay {
   opacity: 1;
 }
 
-.overlay h3 {
+.carros .overlay h3 {
   margin: 0;
   font-size: 1.2rem;
 }
 
-.overlay .seta {
+.carros .overlay .seta {
   font-size: 2rem;
   margin-top: 8px;
 }
