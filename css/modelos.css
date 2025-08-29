@@ -1,8 +1,10 @@
 .carros .card {
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 20px;
   cursor: pointer;
+  border:  solid 5px;
+  margin-bottom: ;
 }
 
 .carros .card img {
