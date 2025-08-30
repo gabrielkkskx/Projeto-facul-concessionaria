@@ -1,121 +1,90 @@
-/* Banner */
-.banner {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0; /* vídeo atrás do overlay */
-}
-
-/* Overlay */
-.banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-/* Conteúdo */
 .banner .container {
   position: relative;
   z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: flex-start; /* alinha à esquerda */
   color: #fff;
   padding-left: 80px;
 }
 
-/* Título */
+/* Título grande */
 .title-banner {
     font-family: "Smooch Sans", sans-serif;
     font-weight: 100;
-    font-size: 65px;
-    margin-bottom: 15px;
-    margin-top: 70px;
+    font-size: 60px;
+    line-height: 1.2; /* quebra de linha melhor */
+    margin-bottom: 30px;
     text-transform: uppercase;
+    max-width: 600px; /* limita largura do texto */
 }
 
 /* Botões principais */
 .botao {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .botao-destaque {
-    background-color: var(--botao-destaque);
-    color: var(--branco)!important;
-    border-radius: 20px;
+    background-color: #5c3fa3; /* roxinho estiloso */
+    color: #fff !important;
+    border-radius: 25px;
     padding: 15px 25px;
-    font-size: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
     transition: all 0.3s;
 }
 
 .botao-destaque:hover {
-    background-color: var(--secundaria);
+    background-color: #7b57c9;
 }
 
+/* Botão de telefone */
 .botao-branco {
-    background-color: var(--branco);
-    color: var(--blk-absoluto)!important;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1);
+    background-color: #fff;
+    color: #000 !important;
+    border-radius: 25px;
     padding: 15px 25px;
-    font-size: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
     transition: all 0.3s;
 }
 
 .botao-branco:hover {
-    background-color: var(--hover-botao);
-    color: var(--branco)!important;
+    background-color: #ddd;
 }
 
-.icon-left {
-    display: inline-block;
-    color: var(--branco);
-    background-color: var(--black);
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    margin-left: -60px;
-    margin-top: -8px;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 8px;
-}
-
-/* Botões sociais */
+/* Ícones sociais */
 .social-container {
     display: flex;
-    gap: 10px;
+    flex-direction: column; /* ícones em coluna à esquerda */
+    gap: 15px;
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
 }
 
 .btn-socialm {
-  background-color: var(--primaria);
-  color: var(--branco);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5c3fa3;
+  color: #fff;
   font-size: 18px;
-  transition: all 0.3s;
+  transition: 0.3s;
 }
 
 .btn-socialm:hover {
-  background-color: var(--hover-botao);
-  color: #fff;
+  background-color: #7b57c9;
 }
