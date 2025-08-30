@@ -1,9 +1,8 @@
 .title-banner{
     font-family: "Smooch Sans", sans-serif;
-    font-weight: 100;
-    font-size: 65px;
+    font-weight: 300;
+    font-size: 40px;
     margin-bottom: 15px;
-    margin-top: 70px;
     text-transform: uppercase;
 }
 
@@ -131,13 +130,12 @@ section div.box div.conteudo{
 section div.box img{
     width: 100%;
     min-width: 300px;
-    top: 60px;
+    filter: invert();
 }
 
 section div.box p{
     color: var(--branco);
-    font-size: 24px;
-    line-height: 32px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 1024px){
