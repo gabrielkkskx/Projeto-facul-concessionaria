@@ -46,13 +46,12 @@ a{
     padding: 10px;
 }
 
-body{
+html, body{
     scroll-behavior: smooth;
     background-color: var(--black);
     color: var(--branco);
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    min-height: 100vh;
 }
 
 .texto-padrao{
