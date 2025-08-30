@@ -11,6 +11,12 @@
     width: 50px;
 }
 
+.btn-sm{
+    padding: 9px 15px !important;
+    border-radius: 15px !important;
+    font-size: 18px !important;
+}
+
 .botao-destaque{
     background-color: var(--botao-destaque);
     color: var(--branco)!important;
