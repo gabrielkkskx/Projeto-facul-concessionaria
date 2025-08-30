@@ -1,90 +1,119 @@
-.banner .container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: flex-start; /* alinha à esquerda */
-  color: #fff;
-  padding-left: 80px;
-}
-
-/* Título grande */
-.title-banner {
+.title-banner{
     font-family: "Smooch Sans", sans-serif;
     font-weight: 100;
-    font-size: 60px;
-    line-height: 1.2; /* quebra de linha melhor */
-    margin-bottom: 30px;
+    font-size: 65px;
+    margin-bottom: 15px;
+    margin-top: 70px;
     text-transform: uppercase;
-    max-width: 600px; /* limita largura do texto */
 }
 
-/* Botões principais */
-.botao {
+.btn-socialm{
+    width: 50px;
+}
+
+.botao-destaque{
+    background-color: var(--botao-destaque);
+    color: var(--branco)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.botao-destaque:hover{
+    background-color: var(--secundaria);
+}
+
+.botao-icon-left{
+    padding-left: 70px;
+}
+
+.botao{
     display: flex;
-    gap: 15px;
+    gap: 10px;
+}
+
+.botao-icon-left span.icon-left{
+    display: inline-block;
+    color: var(--branco);
+    background-color: var(--black);
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: -8px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.btn-socialm{
+    background-color: var(--primaria);
+    color: var(--branco);
+    padding: 9px 15px!important;
+    border-radius: 15px!important;
+    font-size: 18px!important;
+    margin-right: 10px;
     margin-bottom: 20px;
 }
 
-.botao-destaque {
-    background-color: #5c3fa3; /* roxinho estiloso */
-    color: #fff !important;
-    border-radius: 25px;
+.btn-socialm:hover{
+    background-color: var(--hover-botao);
+    color: var(--branco);
+}
+
+.botao-branco{
+    background-color: var(--branco);
+    color: var(--blk-absoluto)!important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1);
     padding: 15px 25px;
-    font-size: 18px;
-    box-shadow: 0px 8px 15px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    transition: all 0.3s;
+    font-size: 20px;
+    transition: background-color .3s;
 }
 
-.botao-destaque:hover {
-    background-color: #7b57c9;
+.botao-branco.active,
+.botao-branco:hover{
+    background-color: var(--hover-botao);
+    color: var(--branco) !important;
 }
 
-/* Botão de telefone */
-.botao-branco {
-    background-color: #fff;
-    color: #000 !important;
-    border-radius: 25px;
-    padding: 15px 25px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
-    transition: all 0.3s;
-}
-
-.botao-branco:hover {
-    background-color: #ddd;
-}
-
-/* Ícones sociais */
-.social-container {
-    display: flex;
-    flex-direction: column; /* ícones em coluna à esquerda */
-    gap: 15px;
+.botao-icon .icon{
+    display: inline-block;
+    color: var(--preto);
+    background-color: var(--blk-absoluto);
+    width: 45px;
+    height: 45px;
     position: absolute;
-    bottom: 40px;
-    left: 80px;
+    right: 10px;
+    margin-top: -9px;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 9px;
 }
 
-.btn-socialm {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+
+.banner {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #5c3fa3;
-  color: #fff;
-  font-size: 18px;
-  transition: 0.3s;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.btn-socialm:hover {
-  background-color: #7b57c9;
+.banner .container {
+  position: relative;
+  z-index: 1;
+  width: 50%; /* texto ocupa metade esquerda */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;   /* ocupa metade direita */
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.35;
 }
