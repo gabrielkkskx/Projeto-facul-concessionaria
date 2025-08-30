@@ -1,6 +1,7 @@
 @import url(./css/banner.css);
 @import url(./css/modelos.css);
 @import url(./css/sobre.css);
+@import url(./css/visitas.css);
 
 :root {
   --black: #1A1523;         /* Roxo quase preto - fundo principal */
