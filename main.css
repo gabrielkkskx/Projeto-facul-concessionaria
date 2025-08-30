@@ -51,8 +51,6 @@ html, body{
     background-color: var(--black);
     color: var(--branco);
     font-family: "Poppins", sans-serif;
-    width: 100%;
-    min-height: 100vh;
 }
 
 .texto-padrao{
