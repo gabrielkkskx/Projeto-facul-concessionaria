@@ -5,6 +5,7 @@
 @import url(./css/footer.css);
 @import url(./css/animate.css);
 @import url(./css/media-queryes.css);
+@import url(./css/formulario.css);
 
 :root {
   --black: #1A1523;         /* Roxo quase preto - fundo principal */
