@@ -92,3 +92,7 @@
     padding-top: 9px;
 }
 
+.banner-video{
+    min-height: 100vh;
+}
+
