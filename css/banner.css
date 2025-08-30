@@ -94,26 +94,51 @@
 
 
 .banner {
-  position: relative; 
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  overflow: hidden; /* evita scroll estranho */
-}
-
-.banner .container {
   position: relative;
-  z-index: 1; /* conteúdo por cima */
-  width: 50%; /* fica só do lado esquerdo */
+  height: 100vh; /* ocupa a tela inteira */
+  overflow: hidden;
 }
 
 .bg-video {
   position: absolute;
   top: 0;
-  right: 0;
-  width: 50%;  /* ocupa metade da tela */
+  left: 0;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* cobre sem distorcer */
+  z-index: -1; /* fica atrás do conteúdo */
+}
+
+/* Overlay opcional pra dar contraste */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* escurece o vídeo */
   z-index: 0;
-  opacity: 0.35; /* deixa o vídeo mais suave */
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: flex-start; /* fica alinhado à esquerda */
+  color: #fff;
+  padding-left: 80px; /* afasta da borda */
+}
+
+.title-banner {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.botao {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
 }
