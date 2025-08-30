@@ -93,27 +93,50 @@
 }
 
 
+/* HERO FULLSCREEN COM VÍDEO DE FUNDO */
 .banner {
   position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  min-height: 100vh;
-  overflow: hidden;
+  overflow: hidden; /* evita barras */
 }
 
+/* deixa o conteúdo acima do vídeo */
 .banner .container {
   position: relative;
-  z-index: 1;
-  width: 50%; /* texto ocupa metade esquerda */
+  z-index: 2;
+  /* opcional: limita largura do texto pra ficar chique */
+  max-width: 720px;
 }
 
+/* vídeo cobrindo tudo por trás */
 .bg-video {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;   /* ocupa metade direita */
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.35;
+  filter: brightness(0.6); /* escurece de leve pra dar contraste no texto */
+}
+
+/* overlay em degradê (estilo Ferrari) pra leitura top */
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* escuro à esquerda, mais transparente à direita */
+  background: linear-gradient(90deg, rgba(10,8,15,0.85) 0%, rgba(10,8,15,0.6) 40%, rgba(10,8,15,0.25) 100%);
+  z-index: 1;
+}
+
+/* MOBILE: se quiser economizar dados, esconde o vídeo e usa o poster */
+@media (max-width: 768px) {
+  .bg-video { display: none; }
+  .banner { background: url("img/bugatti-poster.jpg") center/cover no-repeat; }
 }
