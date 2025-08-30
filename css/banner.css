@@ -129,16 +129,3 @@
   color: #fff;
   padding-left: 80px; /* afasta da borda */
 }
-
-.title-banner {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.botao {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-}
