@@ -6,3 +6,4 @@
   * Css
   * Bootstrap
   * FontAwesome
+  * WOW Js
