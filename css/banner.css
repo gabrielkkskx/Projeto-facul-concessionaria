@@ -92,7 +92,7 @@
     padding-top: 9px;
 }
 
-.video{
+.bg-video{
   position: absolute;
   top: 0;
   left: 0;
@@ -100,4 +100,24 @@
   height: 100%;
   object-fit: cover; /* cobre sem distorcer */
   z-index: -1; 
+}
+
+.banner-video::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* escurece o vídeo */
+  z-index: 0;
+}
+
+.banner-video .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: flex-start; /* fica alinhado à esquerda */
+  color: #fff;
+  padding-left: 80px; /* afasta da borda */
 }
