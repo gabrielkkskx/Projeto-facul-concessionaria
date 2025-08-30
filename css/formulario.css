@@ -1,3 +1,9 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Elementos com o ID "titulo" */
 #titulo-forms {
     font-family: sans-serif;
