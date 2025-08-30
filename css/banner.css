@@ -130,7 +130,7 @@ section div.box{
     height: 100%;
     position: relative;
     z-index: 1;
-    background: linear-gradient(to right, rgb(37 30 57 / 90%), transparent);
+    background: linear-gradient(to right, rgb(18 1 65 / 90%), transparent);
     display: flex;
     align-items: center;
     justify-content: center;
