@@ -1,4 +1,44 @@
-.title-banner{
+/* Banner */
+.banner {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* vídeo atrás do overlay */
+}
+
+/* Overlay */
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* Conteúdo */
+.banner .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding-left: 80px;
+}
+
+/* Título */
+.title-banner {
     font-family: "Smooch Sans", sans-serif;
     font-weight: 100;
     font-size: 65px;
@@ -7,33 +47,42 @@
     text-transform: uppercase;
 }
 
-.btn-socialm{
-    width: 50px;
+/* Botões principais */
+.botao {
+    display: flex;
+    gap: 10px;
 }
 
-.botao-destaque{
+.botao-destaque {
     background-color: var(--botao-destaque);
     color: var(--branco)!important;
     border-radius: 20px;
     padding: 15px 25px;
     font-size: 20px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 }
 
-.botao-destaque:hover{
+.botao-destaque:hover {
     background-color: var(--secundaria);
 }
 
-.botao-icon-left{
-    padding-left: 70px;
+.botao-branco {
+    background-color: var(--branco);
+    color: var(--blk-absoluto)!important;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1);
+    padding: 15px 25px;
+    font-size: 20px;
+    transition: all 0.3s;
 }
 
-.botao{
-    display: flex;
-    gap: 10px;
+.botao-branco:hover {
+    background-color: var(--hover-botao);
+    color: var(--branco)!important;
 }
 
-.botao-icon-left span.icon-left{
+.icon-left {
     display: inline-block;
     color: var(--branco);
     background-color: var(--black);
@@ -47,85 +96,26 @@
     padding-top: 8px;
 }
 
-.btn-socialm{
-    background-color: var(--primaria);
-    color: var(--branco);
-    padding: 9px 15px!important;
-    border-radius: 15px!important;
-    font-size: 18px!important;
-    margin-right: 10px;
-    margin-bottom: 20px;
+/* Botões sociais */
+.social-container {
+    display: flex;
+    gap: 10px;
 }
 
-.btn-socialm:hover{
-    background-color: var(--hover-botao);
-    color: var(--branco);
+.btn-socialm {
+  background-color: var(--primaria);
+  color: var(--branco);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 0.3s;
 }
 
-.botao-branco{
-    background-color: var(--branco);
-    color: var(--blk-absoluto)!important;
-    border-radius: 20px;
-    box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 1);
-    padding: 15px 25px;
-    font-size: 20px;
-    transition: background-color .3s;
-}
-
-.botao-branco.active,
-.botao-branco:hover{
-    background-color: var(--hover-botao);
-    color: var(--branco) !important;
-}
-
-.botao-icon .icon{
-    display: inline-block;
-    color: var(--preto);
-    background-color: var(--blk-absoluto);
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    right: 10px;
-    margin-top: -9px;
-    border-radius: 15px;
-    text-align: center;
-    padding-top: 9px;
-}
-
-
-.banner {
-  position: relative;
-  height: 100vh; /* ocupa a tela inteira */
-  overflow: hidden;
-}
-
-.bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* cobre sem distorcer */
-  z-index: -1; /* fica atrás do conteúdo */
-}
-
-/* Overlay opcional pra dar contraste */
-.banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* escurece o vídeo */
-  z-index: 0;
-}
-
-.banner .container {
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: flex-start; /* fica alinhado à esquerda */
+.btn-socialm:hover {
+  background-color: var(--hover-botao);
   color: #fff;
-  padding-left: 80px; /* afasta da borda */
 }
