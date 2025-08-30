@@ -124,7 +124,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: left; /* centraliza verticalmente */
+  justify-content: center; /* centraliza verticalmente */
   align-items: flex-start; /* fica alinhado à esquerda */
   color: #fff;
   padding-left: 80px; /* afasta da borda */
