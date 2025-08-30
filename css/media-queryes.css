@@ -1,0 +1,81 @@
+@media (max-width: 767px) {
+
+    .hidden-mobile{
+        display: none !important;
+    }
+
+    .col-one{
+        padding: 0 35px !important;
+    }
+
+    .navbar-toggler-icon{
+        padding-top: 5px;
+    }
+
+    .navbar-collapse{
+        background-color: var(--secundaria);
+        padding: 20px;
+        text-align: center;
+        border-radius: 40px;
+    }
+
+    .navbar-collapse .botao-branco{
+        margin-top: 20px;
+    }
+
+    .navbar-collapse .btn-icon{
+        padding-right: 20px;
+    }
+
+    .navbar-collapse .btn-icon span.icon{
+        display: none;
+    }
+
+    .botao-destaque, .btn-white{
+        padding: 13px 23px;
+        font-size: 18px;
+    }
+
+    .botao-icon-left span.icon-left{
+        width: 43px;
+        height: 43px;
+        margin-left: -56px;
+    }
+
+    .botaon-icon-left{
+        padding-left: 63px !important;
+    }
+
+    .reservas{
+        padding-bottom: 50px;
+    }
+
+    .card-secundario{
+        padding: 46px;
+        border-radius: 50px;
+    }
+
+    .container-logo-rodape{
+        justify-content: center;
+    }
+
+    .container-texto-rodape p{
+        text-align: center;
+    }
+
+    .container-social-rodape{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 408px) {
+
+    .btn-voltar{
+        margin-top: 1rem !important;
+    }
+
+}
