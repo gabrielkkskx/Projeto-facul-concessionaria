@@ -93,50 +93,52 @@
 }
 
 
-/* HERO FULLSCREEN COM VÍDEO DE FUNDO */
 .banner {
   position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden; /* evita barras */
+  height: 100vh; /* ocupa a tela inteira */
+  overflow: hidden;
 }
 
-/* deixa o conteúdo acima do vídeo */
-.banner .container {
-  position: relative;
-  z-index: 2;
-  /* opcional: limita largura do texto pra ficar chique */
-  max-width: 720px;
-}
-
-/* vídeo cobrindo tudo por trás */
 .bg-video {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  object-fit: cover;
-  z-index: 0;
-  filter: brightness(0.6); /* escurece de leve pra dar contraste no texto */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cobre sem distorcer */
+  z-index: -1; /* fica atrás do conteúdo */
 }
 
-/* overlay em degradê (estilo Ferrari) pra leitura top */
-.banner::after {
+/* Overlay opcional pra dar contraste */
+.banner::before {
   content: "";
   position: absolute;
   inset: 0;
-  /* escuro à esquerda, mais transparente à direita */
-  background: linear-gradient(90deg, rgba(10,8,15,0.85) 0%, rgba(10,8,15,0.6) 40%, rgba(10,8,15,0.25) 100%);
-  z-index: 1;
+  background: rgba(0, 0, 0, 0.5); /* escurece o vídeo */
+  z-index: 0;
 }
 
-/* MOBILE: se quiser economizar dados, esconde o vídeo e usa o poster */
-@media (max-width: 768px) {
-  .bg-video { display: none; }
-  .banner { background: url("img/bugatti-poster.jpg") center/cover no-repeat; }
+.banner .container {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centraliza verticalmente */
+  align-items: flex-start; /* fica alinhado à esquerda */
+  color: #fff;
+  padding-left: 80px; /* afasta da borda */
+}
+
+.title-banner {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.botao {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
 }
