@@ -124,13 +124,11 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* centraliza verticalmente */
-  align-items: center;     /* centraliza horizontalmente */
-  text-align: center;      /* deixa o texto no centro */
+  justify-content: left; /* centraliza verticalmente */
+  align-items: flex-start; /* fica alinhado à esquerda */
   color: #fff;
-  padding-left: 0;         /* tira o afastamento da esquerda */
+  padding-left: 80px; /* afasta da borda */
 }
-
 
 .title-banner {
   font-size: 3rem;
