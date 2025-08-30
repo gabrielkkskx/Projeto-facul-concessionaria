@@ -161,6 +161,43 @@ section div.box p{
     cursor:default;
 }
 
+.botao-destaque-carros{
+    background-color: var(--botao-destaque);
+    color: var(--branco)!important;
+    border-radius: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+section div.box-carros{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(to right, rgb(18 1 65 / 90%), transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+}
+
+section div.box-carros div.conteudo{
+    width: 80%;
+}
+
+section div.box-carros img{
+    width: 100%;
+    min-width: 300px;
+    filter: invert();
+}
+
+section div.box-carros p{
+    color: var(--branco);
+    margin-top: 50px;
+}
+
 @media screen and (max-width: 1024px){
     section div.box{
         width: 100%;
