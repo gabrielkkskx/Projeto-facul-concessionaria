@@ -91,3 +91,29 @@
     text-align: center;
     padding-top: 9px;
 }
+
+
+.banner {
+  position: relative; 
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden; /* evita scroll estranho */
+}
+
+.banner .container {
+  position: relative;
+  z-index: 1; /* conteúdo por cima */
+  width: 50%; /* fica só do lado esquerdo */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;  /* ocupa metade da tela */
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.35; /* deixa o vídeo mais suave */
+}
