@@ -2,6 +2,7 @@
 @import url(./css/modelos.css);
 @import url(./css/sobre.css);
 @import url(./css/reservas.css);
+@import url(./css/footer.css);
 
 :root {
   --black: #1A1523;         /* Roxo quase preto - fundo principal */
