@@ -1,10 +1,10 @@
-.banner {
+.banner-vd {
   position: relative;
   height: 100vh; /* ocupa a tela inteira */
   overflow: hidden;
 }
 
-.bg-video {
+.video {
   position: absolute;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
 }
 
 /* Overlay opcional pra dar contraste */
-.banner::before {
+.banner-vd::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -33,17 +33,4 @@
   align-items: flex-start; /* fica alinhado à esquerda */
   color: #fff;
   padding-left: 80px; /* afasta da borda */
-}
-
-.title-banner {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.botao {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
 }
