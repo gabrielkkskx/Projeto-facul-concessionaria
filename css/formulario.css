@@ -62,7 +62,7 @@ textarea{
     padding: 16px;
 }
 
-.form-box button{
+.form-box a{
     display: block;
     border: none;
     outline: none;
@@ -76,6 +76,6 @@ textarea{
     cursor: pointer;
 }
 
-.form-box button:hover{
+.form-box a:hover{
     background-color: var(--botao-destaque);
 }
