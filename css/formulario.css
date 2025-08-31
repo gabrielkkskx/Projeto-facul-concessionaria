@@ -27,6 +27,7 @@ textarea{
     padding: 24px 32px;
     font-size: 24px;
     border-bottom: thin solid var(--cinza);
+    color: var(--blk-absoluto);
 }
 
 .form-box form{
