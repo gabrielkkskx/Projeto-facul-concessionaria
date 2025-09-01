@@ -1,22 +1,7 @@
-.caixa-texto{
+.caixa-texto-r{
     margin-top: 2.5rem;
     margin-left: 2%;
     z-index: 1;
-}
-
-
-.links {
-    display: flex;
-    flex-direction: column;
-    margin-left: 190px;
-}
-
-.sobre {
-    width: 40%;
-
-    & p {
-        width: 100%;
-    }
 }
 
 .rodape-contato {
