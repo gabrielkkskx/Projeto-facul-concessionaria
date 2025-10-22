@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===============================
   const loader = document.createElement("div");
   loader.id = "loader";
-  loader.innerHTML = `<div class="carregando"> <img src="./img/logo.png"></div>`;
+  loader.innerHTML = `<div class="carregando"> <img src="./img/whitecar.png"></div>`;
   loader.style.position = "fixed";
   loader.style.top = 0;
   loader.style.left = 0;
