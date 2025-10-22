@@ -150,7 +150,6 @@ section div.box div.conteudo{
 section div.box img{
     width: 100%;
     min-width: 300px;
-    filter: invert();
 }
 
 section div.box p{
