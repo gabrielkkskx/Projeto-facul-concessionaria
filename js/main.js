@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(loader);
 
-  const audio = new Audio("../motor.mp3");
+  const audio = new Audio("./img/motor.mp3");
   audio.volume = 0.4;
 
   window.addEventListener("load", () => {
