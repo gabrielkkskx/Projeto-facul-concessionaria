@@ -1,4 +1,4 @@
-console.log("Funcionou");
+console.log("teste funcionamento Js");
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
