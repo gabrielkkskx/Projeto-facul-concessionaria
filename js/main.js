@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!valid) {
         e.preventDefault();
-        alert("⚠️ Preenche todos os campos obrigatórios antes de enviar, pia!");
+        alert("Preencha todos os campos obrigatórios antes de enviar");
         return;
       }
 
-      const confirmar = confirm("Tem certeza que quer enviar o formulário?");
+      const confirmar = confirm("Tem certeza que deseja enviar o formulário?");
       if (!confirmar) {
         e.preventDefault();
       } else {
