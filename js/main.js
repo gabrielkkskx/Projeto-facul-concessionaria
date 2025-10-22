@@ -1,4 +1,5 @@
-console.log("Funcionou")
+console.log("Funcionou");
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   if (form) {
