@@ -2,35 +2,39 @@ console.log("teste funcionamento Js");
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
+  const botoesModelos = document.querySelectorAll(".btn-modelo, .botao-carro");
+
+  // ========= FORMULÁRIO =========
   if (form) {
     const inputs = form.querySelectorAll("input, textarea, select");
 
-    // Carrega dados salvos
-    inputs.forEach((input) => {
+    // Carrega dados salvos do localStorage
+    inputs.forEach(input => {
       const saved = localStorage.getItem(input.name);
       if (saved) input.value = saved;
     });
 
-    // Salva conforme digita
-    inputs.forEach((input) => {
+    // Salva enquanto digita
+    inputs.forEach(input => {
       input.addEventListener("input", () => {
         localStorage.setItem(input.name, input.value);
       });
     });
 
-    // Validação + confirmação
+    // Validação e confirmação
     form.addEventListener("submit", (e) => {
-      let valid = true;
-      inputs.forEach((input) => {
+      let valido = true;
+
+      inputs.forEach(input => {
         if (input.hasAttribute("required") && input.value.trim() === "") {
-          valid = false;
-          input.style.border = "2px solid red";
+          valido = false;
+          input.classList.add("input-erro");
         } else {
-          input.style.border = "";
+          input.classList.remove("input-erro");
         }
       });
 
-      if (!valid) {
+      if (!valido) {
         e.preventDefault();
         alert("Preencha todos os campos obrigatórios antes de enviar");
         return;
@@ -46,14 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  
-  // ===============================
-  // SOM DE MOTOR AO CLICAR EM MODELO
-  // ===============================
-  const botoesModelos = document.querySelectorAll(".btn-modelo, .botao-carro");
+  // ========= SOM DE MOTOR =========
   if (botoesModelos.length > 0) {
-    const audio = new Audio("../assets/motor.mp3"); // coloca um som curto aqui
-    botoesModelos.forEach((btn) => {
+    const audio = new Audio("../assets/motor.mp3");
+    botoesModelos.forEach(btn => {
       btn.addEventListener("click", () => {
         audio.currentTime = 0;
         audio.play();
@@ -61,32 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-
-  // ===============================
-  // ANIMAÇÃO DE ENTRADA (pré-carregamento)
-  // ===============================
+  // ========= LOADER / PRÉ-CARREGAMENTO =========
   const loader = document.createElement("div");
   loader.id = "loader";
-  loader.innerHTML = `<div class="carregando"> <img src="./img/whitecar.png"></div>`;
-  loader.style.position = "fixed";
-  loader.style.top = 0;
-  loader.style.left = 0;
-  loader.style.width = "100%";
-  loader.style.height = "100%";
-  loader.style.background = "#111";
-  loader.style.color = "#fff";
-  loader.style.display = "flex";
-  loader.style.alignItems = "center";
-  loader.style.justifyContent = "center";
-  loader.style.fontSize = "24px";
-  loader.style.zIndex = "9999";
+  loader.innerHTML = `<div class="carregando"><img src="./img/whitecar.png" alt="Carregando"></div>`;
   document.body.appendChild(loader);
 
   window.addEventListener("load", () => {
     setTimeout(() => {
-      loader.style.opacity = "0";
-      loader.style.transition = "opacity 0.6s ease";
+      loader.classList.add("oculto");
       setTimeout(() => loader.remove(), 600);
     }, 1000);
   });
-});
+});
