@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("JS carregado com sucesso!");
+  console.log("Teste Retorno Js");
 
   // ===== Loader Inicial =====
   const loader = document.createElement("div");
@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
   `;
   document.body.appendChild(loader);
 
-  // Som suave de motor (opcional)
   const audio = new Audio("./motor.mp3");
   audio.volume = 0.4;
 
@@ -42,16 +41,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   }
 
-  // ===== Exemplo de uso =====
+  // ===== Validação do formulário =====
   const form = document.querySelector("form");
   if (form) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
 
-      const nome = form.querySelector("#nome");
-      const email = form.querySelector("#email");
+      const nome = form.querySelector("input[name='name']");
+      const email = form.querySelector("input[name='email']");
+      const data = form.querySelector("input[name='subject']");
+      const mensagem = form.querySelector("textarea[name='message']");
 
-      if (!nome.value) {
+      if (!nome.value.trim()) {
         showNotification("⚠️ Preencha o nome!", "error");
         return;
       }
@@ -59,8 +60,23 @@ document.addEventListener("DOMContentLoaded", () => {
         showNotification("📧 Email inválido!", "error");
         return;
       }
+      if (!data.value) {
+        showNotification("📅 Escolha uma data!", "error");
+        return;
+      }
+      if (!mensagem.value.trim()) {
+        showNotification("✏️ Adicione uma observação!", "error");
+        return;
+      }
 
+      // Se passou em todas as validações
       showNotification("✅ Formulário enviado com sucesso!", "success");
+      
+      // Redireciona pra resposta.html
+      setTimeout(() => {
+        window.location.href = "../html-pages/resposta.html";
+      }, 800);
+
       form.reset();
     });
   }
