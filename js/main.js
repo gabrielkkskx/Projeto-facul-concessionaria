@@ -1,6 +1,4 @@
-// ===============================
-// FORMULÁRIO – Validação e LocalStorage
-// ===============================
+console.log("Funcionou")
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   if (form) {
