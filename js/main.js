@@ -6,13 +6,13 @@ document.addEventListener("DOMContentLoaded", () => {
   loader.id = "loader";
   loader.innerHTML = `
     <div class="loader-content">
-      <img src="./img/whitecar.png" alt="Carregando..." class="loader-logo">
+      <img src="../img/whitecar.png" alt="Carregando..." class="loader-logo">
       <div class="loader-glow"></div>
     </div>
   `;
   document.body.appendChild(loader);
 
-  const audio = new Audio("./motor.mp3");
+  const audio = new Audio("../motor.mp3");
   audio.volume = 0.4;
 
   window.addEventListener("load", () => {
@@ -71,10 +71,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Se passou em todas as validações
       showNotification("✅ Formulário enviado com sucesso!", "success");
-      
+
       // Redireciona pra resposta.html
       setTimeout(() => {
-        window.location.href = "../html-pages/resposta.html";
+        window.location.href = "resposta.html"; // Caminho relativo correto
       }, 800);
 
       form.reset();
