@@ -20,46 +20,55 @@
 </head>
 <body>
 
-<div class="container-forms">
-  <div class="form-box">
-    <h2 class="title">Agende uma visita/Marque um TestDrive</h2>
+    <div class="container-forms">
+        <div class="form-box">
+            <h2 class="title">Agende uma visita/Marque um TestDrive</h2>
 
-    <form id="formAgendamento">
-      <input type="text" name="name" id="name" placeholder="Seu nome" required>
-      <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-      <input type="date" name="subject" id="subject" placeholder="Data que deseja agendar" required>
+            <form id="formAgendamento">
+            <input type="text" name="name" id="name" placeholder="Seu nome" required>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            <input type="date" name="subject" id="subject" placeholder="Data que deseja agendar" required>
 
-      <textarea name="message" id="message" placeholder="Observações adicionais"></textarea>
+            <textarea name="message" id="message" placeholder="Observações adicionais"></textarea>
 
-      <button type="submit" class="botao-destaque">Enviar</button>
-    </form>
-  </div>
-</div>
+            <button type="submit" class="botao-destaque">Enviar</button>
+            </form>
+        </div>
+    </div>
 
-<script>
-  const form = document.getElementById("formAgendamento");
+    <script>
+    const form = document.getElementById("formAgendamento");
 
-  form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Evita o envio padrão
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita o envio padrão
 
-    const nome = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const data = document.getElementById("subject").value;
-    const mensagem = document.getElementById("message").value;
+        const nome = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const data = document.getElementById("subject").value;
+        const mensagem = document.getElementById("message").value;
 
-    // Salva tudo no localStorage
-    localStorage.setItem("nome", nome);
-    localStorage.setItem("email", email);
-    localStorage.setItem("data", data);
-    localStorage.setItem("mensagem", mensagem);
+        //API WhatsApp
+        const numero = "5542999999999";
+        const texto = `Olá, meu nome é ${nome}! 
+        Gostaria de confirmar meu agendamento para o dia ${data}.
+        Meu e-mail é ${email}.
+        Observações: ${mensagem || "Nenhuma."}`;
+        const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
+        window.open(linkZap, "_blank");
+        //  //
 
-    // Redireciona pra outra página
-    window.location.href = "resposta.html";
-  });
-</script>
+        localStorage.setItem("nome", nome);
+        localStorage.setItem("email", email);
+        localStorage.setItem("data", data);
+        localStorage.setItem("mensagem", mensagem);
+
+        
+        window.location.href = "resposta.html"; // Redireciona pra outra página
+    });
+    </script>
 
 
-<script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 
 </body>
 </html>

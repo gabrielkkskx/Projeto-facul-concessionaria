@@ -53,24 +53,24 @@ document.addEventListener("DOMContentLoaded", () => {
       const mensagem = form.querySelector("textarea[name='message']");
 
       if (!nome.value.trim()) {
-        showNotification("⚠️ Preencha o nome!", "error");
+        showNotification("Preencha o nome!", "error");
         return;
       }
       if (!email.value.includes("@")) {
-        showNotification("📧 Email inválido!", "error");
+        showNotification("Email inválido!", "error");
         return;
       }
       if (!data.value) {
-        showNotification("📅 Escolha uma data!", "error");
+        showNotification("Escolha uma data!", "error");
         return;
       }
       if (!mensagem.value.trim()) {
-        showNotification("✏️ Adicione uma observação!", "error");
+        showNotification("Adicione uma observação!", "error");
         return;
       }
 
       // Se passou em todas as validações
-      showNotification("✅ Formulário enviado com sucesso!", "success");
+      showNotification("Formulário enviado com sucesso!", "success");
 
       // Redireciona pra resposta.html
       setTimeout(() => {
@@ -80,4 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       form.reset();
     });
   }
+
+  document.getElementById("btnZap").addEventListener("click", () => {
+  window.location.href = linkZap;
+  });
 });
