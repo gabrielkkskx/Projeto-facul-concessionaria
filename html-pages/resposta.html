@@ -86,44 +86,49 @@
     </div>
   </footer>
 
-  <script>
-    // Puxa os dados salvos no localStorage
-    const nome = localStorage.getItem("nome");
-    const email = localStorage.getItem("email");
-    const data = localStorage.getItem("data");
-    const mensagem = localStorage.getItem("mensagem");
-    
-    const dataFormatada = data ? new Date(data).toLocaleDateString("pt-BR") : "";
+    <script>
+        // Puxa os dados salvos no localStorage
+        const nome = localStorage.getItem("nome");
+        const email = localStorage.getItem("email");
+        const data = localStorage.getItem("data"); // no formato americano "YYYY-MM-DD"
+        const mensagem = localStorage.getItem("mensagem");
 
-    const divDados = document.getElementById("dadosCliente");
+        // Formata a data manualmente para evitar problemas de fuso horário
+        let dataFormatada = "";
+        if (data) {
+            const partes = data.split("-"); // ["2025","11","02"]
+            dataFormatada = `${partes[2]}/${partes[1]}/${partes[0]}`; // DD/MM/AAAA formato br
+        }
 
-    //API WhatsApp
-    const numero = "554291334898";
-    const texto = `Olá, meu nome é ${nome}! 
-    Gostaria de confirmar meu agendamento para o dia ${dataFormatada}.
-    Meu e-mail é ${email}.
-    Observações: ${mensagem || "Nenhuma."}`;
-    const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
-    
+        const divDados = document.getElementById("dadosCliente");
 
-    //qdo clica no botao de confirmar envio, ele abre a página do wpp
-    document.getElementById("btnZap").onclick = function() {
-        window.open(linkZap, "_blank");
-    };
-    
-    //  //
+        // Monta o texto para o WhatsApp
+        const numero = "554291334898";
+        const texto = `Olá, meu nome é ${nome || ""}! 
+        Gostaria de confirmar meu agendamento para o dia ${dataFormatada}.
+        Meu e-mail é ${email || ""}.
+        Observações: ${mensagem || "Nenhuma."}`;
+        const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
 
-    if (nome && email && data) {
-      divDados.innerHTML = `
-        <p><b>Nome:</b><br>${nome}</p>
-        <p><b>E-mail:</b><br>${email}</p>
-        <p><b>Data cadastrada:</b><br>${dataFormatada}</p>
-        <p><b>Observações adicionais:</b><br>${mensagem || "Nenhuma observação."}</p>
-      `;
-    } else {
-      divDados.innerHTML = "<p>Nenhum dado encontrado</p>";
-    }
-  </script>
+        // Botão abre WhatsApp
+        const btnZap = document.getElementById("btnZap");
+        if (nome && email && data) {
+            btnZap.onclick = () => window.open(linkZap, "_blank");
+
+            // Mostra os dados na tela
+            divDados.innerHTML = `
+            <p><b>Nome:</b><br>${nome}</p>
+            <p><b>E-mail:</b><br>${email}</p>
+            <p><b>Data cadastrada:</b><br>${dataFormatada}</p>
+            <p><b>Observações adicionais:</b><br>${mensagem || "Nenhuma observação."}</p>
+            `;
+        } else {
+            // Desabilita botão se não tiver todos os dados
+            btnZap.disabled = true;
+            divDados.innerHTML = "<p>Nenhum dado encontrado</p>";
+        }
+    </script>
+
 
   <script src="./js/main.js"></script>
 
