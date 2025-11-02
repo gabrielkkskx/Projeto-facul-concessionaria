@@ -92,14 +92,15 @@
     const email = localStorage.getItem("email");
     const data = localStorage.getItem("data");
     const mensagem = localStorage.getItem("mensagem");
-    const dataFormatada = new Date(data.value).toLocaleDateString("pt-BR");
+    
+    const dataFormatada = data ? new Date(data).toLocaleDateString("pt-BR") : "";
 
     const divDados = document.getElementById("dadosCliente");
 
     //API WhatsApp
     const numero = "554291334898";
     const texto = `Olá, meu nome é ${nome}! 
-    Gostaria de confirmar meu agendamento para o dia ${data}.
+    Gostaria de confirmar meu agendamento para o dia ${dataFormatada}.
     Meu e-mail é ${email}.
     Observações: ${mensagem || "Nenhuma."}`;
     const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
