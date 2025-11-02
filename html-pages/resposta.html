@@ -95,6 +95,16 @@
 
     const divDados = document.getElementById("dadosCliente");
 
+    //API WhatsApp
+    const numero = "554291334898";
+    const texto = `Olá, meu nome é ${nome}! 
+    Gostaria de confirmar meu agendamento para o dia ${data}.
+    Meu e-mail é ${email}.
+    Observações: ${mensagem || "Nenhuma."}`;
+    const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
+    window.open(linkZap, "_blank");
+    //  //
+
     if (nome && email && data) {
       divDados.innerHTML = `
         <p><b>Nome:</b><br>${nome}</p>

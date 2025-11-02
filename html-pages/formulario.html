@@ -47,16 +47,6 @@
         const data = document.getElementById("subject").value;
         const mensagem = document.getElementById("message").value;
 
-        //API WhatsApp
-        const numero = "5542999999999";
-        const texto = `Olá, meu nome é ${nome}! 
-        Gostaria de confirmar meu agendamento para o dia ${data}.
-        Meu e-mail é ${email}.
-        Observações: ${mensagem || "Nenhuma."}`;
-        const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
-        window.open(linkZap, "_blank");
-        //  //
-
         localStorage.setItem("nome", nome);
         localStorage.setItem("email", email);
         localStorage.setItem("data", data);
