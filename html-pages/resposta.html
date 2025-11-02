@@ -102,7 +102,13 @@
     Meu e-mail é ${email}.
     Observações: ${mensagem || "Nenhuma."}`;
     const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
-    window.open(linkZap, "_blank");
+    
+
+    //qdo clica no botao de confirmar envio, ele abre a página do wpp
+    document.getElementById("btnZap").onclick = function() {
+        window.open(linkZap, "_blank");
+    };
+    
     //  //
 
     if (nome && email && data) {
