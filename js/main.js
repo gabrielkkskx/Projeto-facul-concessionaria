@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Se passou em todas as validações
-      showNotification("Formulário enviado com sucesso!", "success");
+      showNotification("Formulário atualizado!", "success");
 
       // Redireciona pra resposta.html
       setTimeout(() => {
