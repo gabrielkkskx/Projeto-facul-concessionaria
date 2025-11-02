@@ -69,6 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      const dataFormatada = new Date(data.value).toLocaleDateString("pt-BR");
+
       // Se passou em todas as validações
       showNotification("Formulário atualizado!", "success");
 
