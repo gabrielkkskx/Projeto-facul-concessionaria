@@ -92,7 +92,7 @@
     const email = localStorage.getItem("email");
     const data = localStorage.getItem("data");
     const mensagem = localStorage.getItem("mensagem");
-    localStorage.setItem("dataFormatada", dataFormatada);
+    const dataFormatada = new Date(data.value).toLocaleDateString("pt-BR");
 
     const divDados = document.getElementById("dadosCliente");
 
