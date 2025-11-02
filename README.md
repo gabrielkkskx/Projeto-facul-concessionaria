@@ -1,6 +1,6 @@
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-# Optimus Prime Automoveis e Carros
+# OPAEC
 
 ### Projeto da faculdade onde deveria ser criado um site para algum nicho utilizando HTML5 e CSS3, o tema escolhido foi de uma concessionária de carros.
 
@@ -8,7 +8,7 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-<p text-align="justify">Na Optimus Prime Automóveis e carros, a exclusividade é a nossa essência. Oferecemos veículos que combinam elegância, desempenho e prestígio. Cada detalhe é pensado para quem busca mais do que um carro: um ícone de status. Aqui, dirigir é sinônimo de luxo e distinção.</p>
+<p text-align="justify">Na OPAEC, a exclusividade é a nossa essência. Oferecemos veículos que combinam elegância, desempenho e prestígio. Cada detalhe é pensado para quem busca mais do que um carro: um ícone de status. Aqui, dirigir é sinônimo de luxo e distinção.</p>
 
 ## Linguagens, Frameworks e Elementos usados até o momento:
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/27f2f70c-3c0c-451e-ae95-fda448544726" />
