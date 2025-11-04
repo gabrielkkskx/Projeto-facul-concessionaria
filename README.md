@@ -10,7 +10,7 @@
 
 <p text-align="justify">Na OPAEC, a exclusividade é a nossa essência. Oferecemos veículos que combinam elegância, desempenho e prestígio. Cada detalhe é pensado para quem busca mais do que um carro: um ícone de status. Aqui, dirigir é sinônimo de luxo e distinção.</p>
 
-## Linguagens/Frameworks:
+## Tecnologias Utilizadas:
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/27f2f70c-3c0c-451e-ae95-fda448544726" />
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/2342f98a-806c-49fb-9477-a341eeacc1be" />
 <img width="45" height="45" alt="image" src="https://github.com/user-attachments/assets/fe974c41-ade8-437b-86e1-eaea497a5aef" />
