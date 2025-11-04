@@ -10,10 +10,11 @@
 
 <p text-align="justify">Na OPAEC, a exclusividade é a nossa essência. Oferecemos veículos que combinam elegância, desempenho e prestígio. Cada detalhe é pensado para quem busca mais do que um carro: um ícone de status. Aqui, dirigir é sinônimo de luxo e distinção.</p>
 
-## Linguagens, Frameworks e Elementos usados até o momento:
+## Linguagens/Frameworks:
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/27f2f70c-3c0c-451e-ae95-fda448544726" />
 <img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/2342f98a-806c-49fb-9477-a341eeacc1be" />
-<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/de37b3f5-467d-45a5-826a-d33cb06c2a39" />
+<img width="45" height="45" alt="image" src="https://github.com/user-attachments/assets/fe974c41-ade8-437b-86e1-eaea497a5aef" />
+<img width="45" height="45" alt="image" src="https://github.com/user-attachments/assets/de37b3f5-467d-45a5-826a-d33cb06c2a39" />
 <img width="100" height="100" alt="image" src="https://github.com/user-attachments/assets/7e969586-785b-48ce-93e1-dbeacbf20889" />
-<img width="50" height="50" alt="image" src="https://github.com/user-attachments/assets/dac12a8f-2944-4c75-a038-0a7ded4dff85" />
+<img width="45" height="45" alt="image" src="https://github.com/user-attachments/assets/dac12a8f-2944-4c75-a038-0a7ded4dff85" />
 
