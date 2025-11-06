@@ -107,7 +107,7 @@
         const texto = `Olá, meu nome é ${nome || ""}! \n
         \nGostaria de confirmar meu agendamento para o dia \*${dataFormatada}\* .\n
         \nMeu e-mail é \*${email || ""}\*.\n
-        \n*Observações: ${mensagem || "Nenhuma."}\n`;
+        \nObservações:\n ${mensagem || "Nenhuma."}\n`;
         const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
 
         // Botão abre WhatsApp
