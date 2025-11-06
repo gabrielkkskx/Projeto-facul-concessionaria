@@ -104,10 +104,10 @@
 
         // Monta o texto para o WhatsApp
         const numero = "554291334898";
-        const texto = `Olá, meu nome é ${nome || ""}! \n 
-        Gostaria de confirmar meu agendamento para o dia ${dataFormatada}.\n
-        Meu e-mail é ${email || ""}.\n
-        Observações: ${mensagem || "Nenhuma."}`;
+        const texto = `Olá, meu nome é ${nome || ""}! \n
+        \nGostaria de confirmar meu agendamento para o dia \*${dataFormatada}\* .\n
+        \nMeu e-mail é \*${email || ""}\*.\n
+        \n*Observações: ${mensagem || "Nenhuma."}\n`;
         const linkZap = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
 
         // Botão abre WhatsApp
