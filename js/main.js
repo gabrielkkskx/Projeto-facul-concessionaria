@@ -91,10 +91,10 @@ document.addEventListener("DOMContentLoaded", () => {
 class Developer {
   courses = ["ES", "TADS"];
   skills = [
-    logic;
-    problem_solving;
-    debugging;
-    creativity;
-    patience; // a pinch of patience
-  ]
+    "logic",
+    "problem_solving",
+    "debugging",
+    "creativity",
+    "patience" // a pinch of patience
+  ];
 }
