@@ -87,3 +87,14 @@ document.addEventListener("DOMContentLoaded", () => {
   window.location.href = linkZap;
   });
 });
+
+class Developer {
+  courses = ["ES", "TADS"];
+  skills = [
+    logic;
+    problem_solving;
+    debugging;
+    creativity;
+    patience; // a pinch of patience
+  ]
+}
